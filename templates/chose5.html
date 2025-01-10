@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>乖乖</title>
+<style>
+  body, html {
+    background-image: url('/static/background.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Pacifico', cursive;
+    color: #F5FFFA;
+    overflow-x: hidden;
+  }
+  .gif-background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   object-fit: cover; /* 使图片覆盖整个容器 */
+  }
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .header {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+  }
+  .header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #F5FFFA;
+    animation: fadeIn 2s ease;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .card {
+    background-color:transparent; /* 设置背景颜色 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 2s ease;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  .card p {
+    font-size: 16px;
+    color: #FA8072;
+  }
+  .card-link {
+  display: inline-block;
+  text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>最后一题了喔，乖乖真厉害！</h1>
+  <p>这个网站用什么语言写的</p>
+</div>
+<div class="content">
+  <a href="/wrong" class="card-link">
+  <div class="card">
+    <h2>Java</h2>
+    <p></p>
+  </div>
+  </a>
+  <a href="/wrong" class="card-link">
+  <div class="card">
+    <h2>c++</h2>
+    <p></p>
+  </div>
+  </a>
+  <a href="/chose6" class="card-link">
+  <div class="card">
+    <h2>python</h2>
+    <p></p>
+  </div>
+  </a>
+  </a>
+  <a href="/wrong" class="card-link">
+  <div class="card">
+    <h2>c语言</h2>
+    <p></p>
+  </div>
+  </a>
+</div>
+</body>
+</html>
